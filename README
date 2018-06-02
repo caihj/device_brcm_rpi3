@@ -21,6 +21,10 @@ Read it first : https://github.com/android-rpi/local_manifests
  
 # Help for build failure :
    https://github.com/android-rpi/device_brcm_rpi3/wiki/Build-Errors
+# build error for out of memory:
+    $ export JACK_SERVER_VM_ARGUMENTS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4g"
+    $ ./prebuilts/sdk/tools/jack-admin kill-server 
+    $ ./prebuilts/sdk/tools/jack-admin start-server
 
 # Prepare sd card
  Partitions of the card should be set-up like followings.
